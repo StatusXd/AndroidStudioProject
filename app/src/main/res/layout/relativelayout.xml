@@ -13,8 +13,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
         android:rotation="-23"
         android:rotationX="-12"
         android:rotationY="4"
@@ -24,16 +24,15 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:hint="Введите номер интересующего авиарейса" >
-    </EditText>
+        android:layout_centerInParent="true"
+        android:hint="Введите номер интересующего авиарейса"></EditText>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_below="@+id/editText"
-        android:text="Найти" >
-    </Button>
+        android:layout_centerInParent="true"
+        android:backgroundTint="#000000"
+        android:text="Найти"></Button>
 </RelativeLayout>
