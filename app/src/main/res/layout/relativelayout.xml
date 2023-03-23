@@ -8,8 +8,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добро пожаловать в FlightScope"
-        android:textSize="25dp"/>
+        android:text="@string/flightscope"
+        android:textSize="25sp"/>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -18,14 +18,16 @@
         android:rotation="-23"
         android:rotationX="-12"
         android:rotationY="4"
-        app:srcCompat="@drawable/airplane" />
+        app:srcCompat="@drawable/airplane"
+        android:contentDescription="@string/test_logo" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:hint="Введите номер интересующего авиарейса"></EditText>
+        android:layout_centerVertical="true"
+        android:hint="@string/flightnumber"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/button"
@@ -33,6 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText"
         android:layout_centerInParent="true"
-        android:backgroundTint="#000000"
-        android:text="Найти"></Button>
+        android:text="@string/search"
+        android:backgroundTint="@color/black" />
 </RelativeLayout>
+

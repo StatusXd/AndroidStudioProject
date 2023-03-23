@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AndroidStudioProject</string>
+    <string name="flightscope">Добро пожаловать в FlightScope</string>
+    <string name="test_logo">Test logo</string>
+    <string name="sorry">К сожалению, ничего не найдено.</string>
+    <string name="flightnumber">Введите номер авиарейса</string>
+    <string name="search">Найти</string>
 </resources>

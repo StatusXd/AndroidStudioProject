@@ -18,8 +18,8 @@
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/airplane" />
+            app:srcCompat="@drawable/airplane"
+            android:contentDescription="@string/test_logo" />
     </LinearLayout>
 
     <TextView
@@ -27,9 +27,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="center"
-        android:text="К сожалению, ничего не найдено."
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:text="@string/sorry"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 </LinearLayout>
+
