@@ -23,15 +23,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.constraint_layout);
-        Toast toast = Toast.makeText(getApplicationContext(), "onCreate",Toast.LENGTH_LONG);
-        toast.show();
+//        Toast toast = Toast.makeText(getApplicationContext(), "onCreate",Toast.LENGTH_LONG);
+//        toast.show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Toast toast = Toast.makeText(getApplicationContext(), "onStart",Toast.LENGTH_LONG);
-        toast.show();
+//        Toast toast = Toast.makeText(getApplicationContext(), "onStart",Toast.LENGTH_LONG);
+//        toast.show();
 
         editText = findViewById(R.id.editText);
 
@@ -40,26 +40,26 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        Toast toast = Toast.makeText(getApplicationContext(), "onStop",Toast.LENGTH_LONG);
-        toast.show();
+//        Toast toast = Toast.makeText(getApplicationContext(), "onStop",Toast.LENGTH_LONG);
+//        toast.show();
     }
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast toast = Toast.makeText(getApplicationContext(), "onDestroy",Toast.LENGTH_LONG);
-        toast.show();
+//        Toast toast = Toast.makeText(getApplicationContext(), "onDestroy",Toast.LENGTH_LONG);
+//        toast.show();
     }
     @Override
     protected void onPause() {
         super.onPause();
-        Toast toast = Toast.makeText(getApplicationContext(), "onPause",Toast.LENGTH_LONG);
-        toast.show();
+//        Toast toast = Toast.makeText(getApplicationContext(), "onPause",Toast.LENGTH_LONG);
+//        toast.show();
     }
     @Override
     protected void onResume() {
         super.onResume();
-        Toast toast = Toast.makeText(getApplicationContext(), "onResume",Toast.LENGTH_LONG);
-        toast.show();
+//        Toast toast = Toast.makeText(getApplicationContext(), "onResume",Toast.LENGTH_LONG);
+//        toast.show();
     }
 
     public void OnSearchClick(View v) {
