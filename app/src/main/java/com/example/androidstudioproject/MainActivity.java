@@ -33,24 +33,8 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(getApplicationContext(), "onStart",Toast.LENGTH_LONG);
         toast.show();
 
-
-
-        TextView textView = findViewById(R.id.textView2);
-        textView.setText(R.string.flightscope);
-
-        ImageView iv = findViewById(R.id.imageView4);
-        iv.setImageResource(R.drawable.airplane);
-
-        ImageButton account = findViewById(R.id.imageButton5);
-
         editText = findViewById(R.id.editText);
 
-        account.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.i(TAG, "Нажали на кнопку входа в аккаунт");
-            }
-        });
     }
 
     @Override
