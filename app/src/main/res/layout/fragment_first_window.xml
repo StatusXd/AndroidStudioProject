@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstWindowFragment">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginTop="395dp"
+        android:hint="@string/flightnumber"
+        android:inputType="text"
+        android:autofillHints="" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="114dp"
+        android:text="@string/flightscope"
+        android:textSize="25sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="302dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginBottom="114dp"
+        android:src="@drawable/airplane" />
+
+    <ImageButton
+        android:id="@+id/viewedButton"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/transparent"
+        android:contentDescription="@string/viewed"
+        android:scaleType="fitXY"
+        android:src="@drawable/viewed" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="291dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/search" />
+
+
+</FrameLayout>
