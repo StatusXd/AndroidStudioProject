@@ -59,17 +59,6 @@ public class MainActivity extends AppCompatActivity implements FirstWindowFragme
 
     @Override
     public void onButtonSelected(int buttonIndex) {
-//        switch (buttonIndex) {
-//            case 1:
-//                Intent second = new Intent(this, SecondWindow.class);
-//                startActivity(second);
-//                Log.d(TAG, "onSecondActivity");
-//            case 2:
-//                Intent third = new Intent(this, ThirdWindow.class);
-//                startActivity(third);
-//                Log.d(TAG, "onThirdActivity");
-//        }
-
         if(buttonIndex == 1) {
             Intent second = new Intent(this, SecondWindow.class);
             startActivity(second);
