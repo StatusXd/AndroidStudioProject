@@ -1,8 +1,10 @@
-package com.example.androidstudioproject;
+package com.example.androidstudioproject.UI.view;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,13 +13,23 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.androidstudioproject.Domain.TrackViewModel;
+import com.example.androidstudioproject.R;
+
 public class FirstWindowFragment extends Fragment implements View.OnClickListener {
+    private TrackViewModel model;
+
+    public void onCreate(@Nullable Bundle savedInstanseState){
+        super.onCreate(savedInstanseState);
+        model = new ViewModelProvider(getActivity()).get(TrackViewModel.class);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_first_window,
                 container, false);
+
 
         Button searchButton = (Button) rootView.findViewById(R.id.searchButton);
         ImageButton viewedButton = (ImageButton) rootView.findViewById(R.id.viewedButton);

@@ -1,4 +1,4 @@
-package com.example.androidstudioproject;
+package com.example.androidstudioproject.UI.view;
 
 import android.os.Bundle;
 
@@ -7,6 +7,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import androidx.recyclerview.widget.RecyclerView;
+import android.os.Bundle;
+
+import com.example.androidstudioproject.R;
+
+import java.util.ArrayList;
 
 public class ThirdWindowFragment extends Fragment {
 
@@ -14,6 +20,8 @@ public class ThirdWindowFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_third_window, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_third_window, container, false);
+
+        return rootView;
     }
 }
