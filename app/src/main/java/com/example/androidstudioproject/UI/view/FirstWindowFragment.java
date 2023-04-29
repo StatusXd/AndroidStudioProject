@@ -30,11 +30,16 @@ public class FirstWindowFragment extends Fragment {
                 container, false);
 
 
+
         Button searchButton = (Button) rootView.findViewById(R.id.searchButton);
         ImageButton viewedButton = (ImageButton) rootView.findViewById(R.id.viewedButton);
 
+        FragmentFirstWinndowBinding binding = FragmentFirstWinndowBinding.inflate(inflater, container,
+                false);
 
-
+        model.getTracks().observe(getViewLifecycleOwner(), t-> {
+            binding.trackNum.setText(t.getTracks());
+        });
 
         View.OnClickListener serBut = new View.OnClickListener() {
             @Override
@@ -75,8 +80,6 @@ public class FirstWindowFragment extends Fragment {
 
         OnSelectedButtonListener listener = (OnSelectedButtonListener) getActivity();
         listener.onButtonSelected(buttonIndex);
-        model.getTracks().observe(getViewLifecycleOwner(), t->
-        {});
     }
 
     public interface OnSelectedButtonListener {
