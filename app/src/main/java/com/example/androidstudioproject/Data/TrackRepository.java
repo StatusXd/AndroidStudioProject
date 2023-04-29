@@ -1,19 +1,27 @@
 package com.example.androidstudioproject.Data;
 
-public class TrackRepository {
-    private String track;
-    private int img;
+import java.util.Iterator;
 
-    public TrackRepository(String track, int img){
-        this.track = track;
-        this.img = img;
-    }
+public class TrackRepository {
+    private final TrackDataSource trackDataSource;
+    private static TrackRepository INSTANSE;
+    private Iterator<TrackDTO> iter;
+    private TrackDTO current;
 
     public TrackRepository() {
-
+        trackDataSource = new TrackDataSource();
+        iter = trackDataSource.getTraks().listIterator();
+        current = iter.next();
     }
 
-    public int getImg() {
-        return img;
+    public static TrackRepository getInstance(){
+        if (INSTANSE == null){
+            INSTANSE = new TrackRepository();
+        }
+        return INSTANSE;
+    }
+
+    public TrackDTO getCurrent() {
+        return current;
     }
 }
