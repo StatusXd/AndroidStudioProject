@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.androidstudioproject.Data.ListModule;
+import com.example.androidstudioproject.Data.Models.ListModule;
 import com.example.androidstudioproject.R;
 
 import java.util.List;

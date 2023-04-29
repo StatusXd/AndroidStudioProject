@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.androidstudioproject.Data.ListModule;
+import com.example.androidstudioproject.Data.Models.ListModule;
 import com.example.androidstudioproject.UI.viewHolder.ListAdapter;
 
 import com.example.androidstudioproject.R;

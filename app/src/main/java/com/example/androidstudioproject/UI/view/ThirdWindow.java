@@ -4,9 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import androidx.recyclerview.widget.RecyclerView;
-import android.os.Bundle;
 
-import com.example.androidstudioproject.Data.RecModule;
+import com.example.androidstudioproject.Data.Models.RecModule;
 import com.example.androidstudioproject.R;
 import com.example.androidstudioproject.UI.viewHolder.RecAdapter;
 

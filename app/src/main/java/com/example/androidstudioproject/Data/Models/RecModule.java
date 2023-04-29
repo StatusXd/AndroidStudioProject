@@ -1,4 +1,4 @@
-package com.example.androidstudioproject.Data;
+package com.example.androidstudioproject.Data.Models;
 
 public class RecModule {
 

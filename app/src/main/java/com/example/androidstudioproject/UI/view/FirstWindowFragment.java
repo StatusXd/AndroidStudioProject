@@ -13,15 +13,14 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.androidstudioproject.Domain.TrackViewModel;
 import com.example.androidstudioproject.R;
 
-public class FirstWindowFragment extends Fragment implements View.OnClickListener {
+public class FirstWindowFragment extends Fragment {
     private TrackViewModel model;
 
-    public void onCreate(@Nullable Bundle savedInstanseState){
-        super.onCreate(savedInstanseState);
-        model = new ViewModelProvider(getActivity()).get(TrackViewModel.class);
+    public void onCreate(@Nullable Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        model = new ViewModelProvider(this).get(TrackViewModel.class);
     }
 
     @Override
@@ -34,8 +33,23 @@ public class FirstWindowFragment extends Fragment implements View.OnClickListene
         Button searchButton = (Button) rootView.findViewById(R.id.searchButton);
         ImageButton viewedButton = (ImageButton) rootView.findViewById(R.id.viewedButton);
 
-        searchButton.setOnClickListener(this);
-        viewedButton.setOnClickListener(this);
+
+
+
+        View.OnClickListener serBut = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        };
+
+        View.OnClickListener vieBut = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        };
+
+        searchButton.setOnClickListener(serBut);
+        viewedButton.setOnClickListener(vieBut);
 
         return rootView;
     }
@@ -53,7 +67,6 @@ public class FirstWindowFragment extends Fragment implements View.OnClickListene
         return index;
     }
 
-    @Override
     public void onClick(View view) {
         int buttonIndex = translateIdToIndex(view.getId());
 
@@ -62,6 +75,8 @@ public class FirstWindowFragment extends Fragment implements View.OnClickListene
 
         OnSelectedButtonListener listener = (OnSelectedButtonListener) getActivity();
         listener.onButtonSelected(buttonIndex);
+        model.getTracks().observe(getViewLifecycleOwner(), t->
+        {});
     }
 
     public interface OnSelectedButtonListener {

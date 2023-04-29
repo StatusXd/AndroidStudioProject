@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.androidstudioproject.Data.RecModule;
+import com.example.androidstudioproject.Data.Models.RecModule;
 import com.example.androidstudioproject.R;
 
 import java.util.List;

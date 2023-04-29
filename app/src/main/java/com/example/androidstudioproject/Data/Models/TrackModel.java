@@ -1,4 +1,4 @@
-package com.example.androidstudioproject.Data;
+package com.example.androidstudioproject.Data.Models;
 
 public class TrackModel {
     private final String track;
@@ -9,9 +9,9 @@ public class TrackModel {
         this.img = img;
     }
 
-    public TrackModel(TrackDTO trackDTO){
-        this.track = trackDTO.getTrack();
-        this.img = trackDTO.getImg();
+    public TrackModel(TrackModel trackModel){
+        this.track = trackModel.getTrack();
+        this.img = trackModel.getImg();
     }
 
     public String getTrack() {
@@ -22,3 +22,5 @@ public class TrackModel {
         return img;
     }
 }
+
+
