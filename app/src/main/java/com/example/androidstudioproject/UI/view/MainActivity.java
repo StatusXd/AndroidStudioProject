@@ -2,21 +2,30 @@ package com.example.androidstudioproject.UI.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
+
+import com.example.androidstudioproject.Data.DataSources.RecentTrackDataSource;
+import com.example.androidstudioproject.Data.DataSources.SharedPreferencesDataSource;
 import com.example.androidstudioproject.R;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 import android.util.Log;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity implements FirstWindowFragment.OnSelectedButtonListener {
     final String TAG = "ACTIVITY_STATE";
+
+    EditText editText = findViewById(R.id.editText);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 //        Toast toast = Toast.makeText(getApplicationContext(), "onCreate",Toast.LENGTH_LONG);
 //        toast.show();
 //        Log.d(TAG, "onCreate");
@@ -61,6 +70,9 @@ public class MainActivity extends AppCompatActivity implements FirstWindowFragme
     @Override
     public void onButtonSelected(int buttonIndex) {
         if(buttonIndex == 1) {
+            String s = editText.getText().toString();
+            new RecentTrackDataSource(this);
+            new SharedPreferencesDataSource(this);
             Intent second = new Intent(this, SecondWindow.class);
             startActivity(second);
             Log.d(TAG, "onSecondActivity");

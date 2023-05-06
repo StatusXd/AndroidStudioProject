@@ -10,8 +10,8 @@ import java.util.LinkedList;
 public class TrackDataSource {
     private final LinkedList<TrackModel> tracks = new LinkedList<>();
 
-    public TrackDataSource(){
-        for(int i = 100; i <= 150; i++) {
+    public TrackDataSource() {
+        for (int i = 100; i <= 150; i++) {
             TrackModel track = new TrackModel(" " + (char) i, R.drawable.airplane);
             tracks.add(track);
         }
