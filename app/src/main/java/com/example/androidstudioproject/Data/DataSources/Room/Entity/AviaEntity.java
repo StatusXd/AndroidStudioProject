@@ -17,7 +17,4 @@ public class AviaEntity {
     public AviaEntity(@NonNull String track){
         this.track = track;
     }
-
-    public static <Y, X> Y toDomainModel(X x) {
-    }
 }
