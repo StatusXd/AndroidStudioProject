@@ -1,4 +1,4 @@
-package com.example.androidstudioproject.Data.DataSources;
+package com.example.androidstudioproject.Data.DataSources.Room.Entity;
 
 import android.text.style.IconMarginSpan;
 

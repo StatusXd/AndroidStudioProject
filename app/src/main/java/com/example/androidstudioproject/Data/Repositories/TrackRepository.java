@@ -1,18 +1,13 @@
 package com.example.androidstudioproject.Data.Repositories;
 
-import android.os.Build;
-
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Transformations;
 
-import com.example.androidstudioproject.Data.DataSources.AviaDatabase;
-import com.example.androidstudioproject.Data.DataSources.AviaEntity;
+import com.example.androidstudioproject.Data.DataSources.Room.Database.AviaDatabase;
+import com.example.androidstudioproject.Data.DataSources.Room.Entity.AviaEntity;
 import com.example.androidstudioproject.Data.DataSources.TrackDataSource;
 import com.example.androidstudioproject.Data.Models.TrackModel;
 
 import java.util.LinkedList;
-import java.util.stream.Collectors;
 
 public class TrackRepository {
     private final TrackDataSource trackDataSource;

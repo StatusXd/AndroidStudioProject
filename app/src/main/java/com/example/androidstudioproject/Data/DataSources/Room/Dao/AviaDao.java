@@ -1,4 +1,4 @@
-package com.example.androidstudioproject.Data.DataSources;
+package com.example.androidstudioproject.Data.DataSources.Room.Dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -6,8 +6,10 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import com.example.androidstudioproject.Data.DataSources.Room.Entity.AviaEntity;
+
 import java.util.List;
-import com.example.androidstudioproject.Data.DataSources.AviaEntity;
+
 @Dao
 public interface AviaDao {
     @Query("SELECT * FROM Avia")

@@ -1,4 +1,4 @@
-package com.example.androidstudioproject.Data.DataSources;
+package com.example.androidstudioproject.Data.DataSources.Room.Database;
 
 import android.content.Context;
 
@@ -7,9 +7,10 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 
+import com.example.androidstudioproject.Data.DataSources.Room.Entity.AviaEntity;
+import com.example.androidstudioproject.Data.DataSources.Room.Dao.AviaDao;
+
 import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 @Database(entities = {AviaEntity.class}, version = 1)
 public abstract class AviaDatabase extends RoomDatabase {
